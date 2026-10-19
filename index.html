@@ -3,45 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقعي الشخصي | حسني</title>
+    <title>معرض أعمال | حسني</title>
     <style>
-        body {
-            font-family: Tahoma, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            text-align: center;
-            padding: 50px;
-        }
-        .container {
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-            max-width: 600px;
-            margin: auto;
-        }
-        h1 { color: #2ea44f; }
-        p { font-size: 18px; line-height: 1.6; }
-        .btn {
-            display: inline-block;
-            background-color: #2ea44f;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin-top: 20px;
-            font-weight: bold;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0d1117; color: #c9d1d9; line-height: 1.6; }
+        header { background-color: #161b22; padding: 40px 20px; text-align: center; border-bottom: 1px solid #30363d; }
+        header h1 { color: #58a6ff; font-size: 2.5rem; margin-bottom: 10px; }
+        header p { color: #8b949e; font-size: 1.2rem; }
+        .container { max-width: 900px; margin: 30px auto; padding: 0 20px; }
+        section { background: #161b22; padding: 25px; border-radius: 8px; margin-bottom: 25px; border: 1px solid #30363d; }
+        h2 { color: #3fb950; margin-bottom: 15px; border-bottom: 2px solid #21262d; padding-bottom: 5px; }
+        .skills-list { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; }
+        .skills-list li { background: #21262d; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; border: 1px solid #30363d; }
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .project-card { background: #21262d; padding: 15px; border-radius: 6px; border: 1px solid #30363d; }
+        .project-card h3 { color: #58a6ff; margin-bottom: 10px; }
+        .btn { display: inline-block; background-color: #238636; color: white; padding: 10px 20px; text-decoration: none; border-radius: 6px; font-weight: bold; margin-top: 10px; }
+        .btn:hover { background-color: #2ea44f; }
+        footer { text-align: center; padding: 20px; color: #8b949e; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
+    <header>
+        <h1>حسني | Hosni</h1>
+        <p>مطور برمجيات متعدّد المهارات & متألق في Git & GitHub</p>
+    </header>
+
     <div class="container">
-        <h1>أهلاً بك في موقعي الشخصي! 🚀</h1>
-        <p>أنا مطور في بداية رحلتي، أتعلّم تطوير الويب ومهارات Git و GitHub بشغف.</p>
-        <p>هذا الموقع تم تصميمه ورفعه مجاناً عبر GitHub Pages.</p>
-        <a href="https://github.com/husni74" class="btn" target="_blank">زوروا حسابي على GitHub</a>
+        <section>
+            <h2>👤 نبذة عني</h2>
+            <p>مطور برمجيات شغوف بالتعلم والتطوير، أمتلك مهارات عالية في إدارة المشاريع باستخدام Git وGitHub ونشر التطبيقات والمواقع على السحاب.</p>
+        </section>
+
+        <section>
+            <h2>🛠️ المهارات والتقنيات</h2>
+            <ul class="skills-list">
+                <li>Git & GitHub</li>
+                <li>HTML5 & CSS3</li>
+                <li>GitHub Pages</li>
+                <li>إدارة الفروع (Branching)</li>
+                <li>حل تعارض الكود (Merge Conflicts)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>🚀 معرِض المشاريع</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>مشروعي الأول (Portfolio)</h3>
+                    <p>موقع شخصي متكامل ومستضاف مجاناً عبر GitHub Pages لتقديم المهارات وتصميم الواجهات.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>السبل للتواصل</h2>
+            <p>هل لديك مشروع أو فرصة عمل؟ يسعدني التواصل معك عبر حسابي الرسمي:</p>
+            <a href="https://github.com/husni74" target="_blank" class="btn">زيارة حساب GitHub</a>
+        </section>
     </div>
+
+    <footer>
+        <p>© 2026 جميع الحقوق محفوظة - تم التطوير بواسطة حسني</p>
+    </footer>
 
 </body>
 </html>
